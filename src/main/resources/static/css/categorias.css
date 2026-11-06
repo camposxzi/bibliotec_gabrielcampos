@@ -1,0 +1,170 @@
+/* Configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #2b2b2b;
+    padding: 30px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #0B2A5B;
+}
+
+/* Barra de ações */
+.barra {
+    margin-bottom: 20px;
+}
+
+/* Formulário */
+.formulario {
+    max-width: 500px;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+/* Campos com erro */
+.campo-erro {
+    border: 1px solid #dc3545 !important;
+    background-color: #fff5f5;
+}
+
+/* Mensagens de erro */
+.erro {
+    color: #dc3545;
+    font-size: 13px;
+    margin-top: -10px;
+    margin-bottom: 15px;
+}
+
+/* Mensagens de sucesso */
+.mensagem {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    border: 1px solid #a5d6a7;
+    padding: 12px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Botões */
+.botao {
+    display: inline-block;
+    background-color: #0B2A5B;
+    color: #ffffff;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.botao:hover {
+    background-color: #16417f;
+}
+
+.botao-secundario {
+    background-color: #6c757d;
+}
+
+.botao-secundario:hover {
+    background-color: #565e64;
+}
+
+.botao-pequeno {
+    padding: 7px 11px;
+    font-size: 12px;
+}
+
+.botao-perigo {
+    background-color: #dc3545;
+}
+
+.botao-perigo:hover {
+    background-color: #b02a37;
+}
+
+/* Ações */
+.acoes {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.excluir {
+    display: inline;
+}
+
+/* Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    margin-top: 15px;
+}
+
+caption {
+    font-weight: bold;
+    padding: 12px;
+    color: #0B2A5B;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #0B2A5B;
+    color: #ffffff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th,
+    td {
+        padding: 7px;
+    }
+
+    .acoes {
+        flex-wrap: wrap;
+    }
+}
